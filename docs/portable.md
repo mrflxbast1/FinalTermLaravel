@@ -2,26 +2,22 @@
 
 The portable ZIP is for running and presenting Stockroom. The source ZIP is for GitHub and development. They contain the same application, but the portable version also includes its runtime and built dependencies.
 
-## What to send
+## Downloads
 
-- `FinalTermLaravel-source.zip`: extract, then upload the source files to Basty's own GitHub repository. This archive contains no `.git` history, private `.env`, database, installed dependencies, or local development tools.
-- `Stockroom-1.0.0-windows-x64.zip`: upload as a GitHub Release asset, or share through Google Drive. Recipients extract it and double-click `Open Stockroom.cmd`.
+- `FinalTermLaravel-source.zip`: the complete application source, without a private `.env`, database, installed dependencies, or local development tools. It is also available through GitHub's Code download.
+- `Stockroom-1.0.0-windows-x64.zip`: the ready-to-run Windows edition. Recipients extract it and double-click `Open Stockroom.cmd`.
 - `Stockroom-1.0.0-windows-x64.zip.sha256`: optional checksum for verifying that a download is intact.
 
 Project owner: **Basty Mirafelix**, [mrflxbast1](https://github.com/mrflxbast1), mirafelixjohnbasty@gmail.com.
 
-## Uploading from Basty's GitHub account
+The source and ready-to-run downloads are published together at [FinalTermLaravel Releases](https://github.com/mrflxbast1/FinalTermLaravel/releases).
 
-1. Sign in to `mrflxbast1` and create a repository named `FinalTermLaravel`. Choose the visibility required by the instructor.
-2. Extract `FinalTermLaravel-source.zip` and open its `FinalTermLaravel` folder.
-3. Upload the contents of that folder to the repository, keeping the directory structure. GitHub Desktop or Git is convenient for the whole project, including dotfiles; the website's Upload files option is also available. Do not upload only the ZIP if the professor expects to inspect the code.
-4. Check that `README.md`, `.env.example`, `composer.json`, `package.json`, `app/`, `resources/`, and `routes/` appear in the repository root.
-5. Create a release tagged `v1.0.0` and attach the portable ZIP and its `.sha256` file. Do not add the portable ZIP or its extracted runtime to the source tree.
-6. Share the repository link for code review and the release link for a ready-to-run download.
+## Publishing an updated version
 
-Creating the repository directly in Basty's account avoids an ownership transfer. Source ZIPs do not contain Git metadata; new commits record the identity used when uploading. Repository ownership and commit authorship are separate from who contributed to the project.
-
-Google Drive can be used simply to pass both ZIP files to Basty. He can upload the source and publish the portable release when ready. The app itself still runs locally.
+1. Commit the application changes to the main branch and run the application tests.
+2. Build and verify the new portable version using the commands below.
+3. Create a GitHub release with a matching version tag and attach the portable ZIP, checksum, and source ZIP.
+4. Update the download link in README.md when the version changes. Keep large release binaries outside the source tree.
 
 ## Using the portable package
 

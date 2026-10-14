@@ -30,7 +30,7 @@ The [team guide](docs/team-parts.md) maps the files, shared boundaries, and pres
 
 For someone who only wants to use or demonstrate the app:
 
-1. Download **Stockroom-1.0.0-windows-x64.zip** from the supplied download link or the repository's Releases page once published.
+1. Download **[Stockroom-1.0.0-windows-x64.zip](https://github.com/mrflxbast1/FinalTermLaravel/releases/download/v1.0.0/Stockroom-1.0.0-windows-x64.zip)** from [Releases](https://github.com/mrflxbast1/FinalTermLaravel/releases).
 2. Extract the entire ZIP to a writable folder, such as Documents.
 3. Double-click **Open Stockroom.cmd**. The browser opens automatically after startup.
 4. Sign in with **admin@stockroom.test** / **Stockroom123!**.
